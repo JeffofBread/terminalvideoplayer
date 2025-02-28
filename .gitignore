@@ -1,32 +1,22 @@
-# Prerequisites
-*.d
+# Ignore all
+*
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Unignore all with extensions
+!*.*
 
-# Precompiled Headers
-*.gch
-*.pch
+# Unignore all dirs
+!*/
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+### Above combination will ignore all files without extension (From https://stackoverflow.com/a/25592735)  ###
 
-# Fortran module files
-*.mod
-*.smod
+# Ignore files with only an extension
+.*
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# Ignore a couple key directories
+build/
 
-# Executables
-*.exe
-*.out
-*.app
+# Keep Special files
+!Makefile
+!LICENSE
+!.gitignore
+!.clang-format
