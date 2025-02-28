@@ -28,4 +28,11 @@ ${BUILD_DIRECTORY}/${PROGRAM_NAME}: ${SOURCE} | ${BUILD_DIRECTORY}
 clean:
 	rm -f ${BUILD_DIRECTORY}/${PROGRAM_NAME}
 
-.PHONY: all clean
+ifeq ($(shell uname -s), Linux)
+INSTALL_PATH := /usr/local/bin
+install: all
+	sudo cp -f ${BUILD_DIRECTORY}/${PROGRAM_NAME} ${INSTALL_PATH}/${PROGRAM_NAME}
+.PHONY: install
+endif
+
+.PHONY: all ${PROGRAM_NAME} clean
