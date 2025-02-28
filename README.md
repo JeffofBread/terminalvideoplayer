@@ -20,7 +20,10 @@ g++ src/main.cpp src/video.cpp -Iinc/ -std=c++17 -O3 -o tvp -lavformat -lavcodec
 
 Below is a preview of how it looks:
 
-![video playing in terminal](./imgs/video.gif)
+<p align="center">
+<img src="https://raw.githubusercontent.com/JeffofBread/terminalvideoplayer/refs/heads/screenshots/video.gif" alt="Example of tvp running in a terminal" style="display: block; margin-left: auto; margin-right: auto; width: 65%;">
+</p>
+
 
 ## How it works
 
@@ -28,7 +31,9 @@ This is not a new concept. But most terminal video players I have seen use two p
 
 But, if you search up the unicode block characters, you see this:
 
-![unicode block characters table](./imgs/unicode_block_elements.png)
+<p align="center">
+<img src="https://raw.githubusercontent.com/JeffofBread/terminalvideoplayer/refs/heads/screenshots/unicode_block_elements.png" alt="Chart of unicode characters used" style="display: block; margin-left: auto; margin-right: auto; width: 65%;">
+</p>
 
 Clearly there is potential here. By using the unicode quarter block characters, as well as the half blocks
 
