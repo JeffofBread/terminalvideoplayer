@@ -12,11 +12,4 @@
 # Ignore files with only an extension
 .*
 
-# Ignore a couple key directories
-build/
-
-# Keep Special files
-!Makefile
-!LICENSE
 !.gitignore
-!.clang-format
