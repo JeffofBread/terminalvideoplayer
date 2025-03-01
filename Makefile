@@ -28,6 +28,9 @@ ${BUILD_DIRECTORY}/${PROGRAM_NAME}: ${SOURCE} | ${BUILD_DIRECTORY}
 clean:
 	rm -f ${BUILD_DIRECTORY}/${PROGRAM_NAME}
 
+format:
+	clang-format -i --style=file ${SOURCE_DIRECTORY}/*.cpp ${INCLUDE_DIRECTORY}/*.h
+
 ifeq ($(shell uname -s), Linux)
 INSTALL_PATH := /usr/local/bin
 install: all
