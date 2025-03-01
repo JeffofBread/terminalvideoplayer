@@ -164,7 +164,7 @@ int main(int argc, char *argv[]) {
 
     // check if number of arguments is correct
     if (argc <= 1 || strlen(argv[1]) <= 0) {
-        printf("\x1B[0mplease provide the filename as the first input argument");
+        printf("\x1B[0mplease provide the filename as the first input argument\n");
         fflush(stdout);
         return 0;
     }
